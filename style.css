@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #675afe;
+}
+
+.wrapper {
+  min-width: 400px;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.wrapper header h1 {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.wrapper form {
+  margin: 40px 0 20px 0;
+}
+
+.wrapper form :where(input,select, button ) {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.amount label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+#amount {
+  height: 50px;
+  padding: 0 15px;
+  font-size: 18px;
+  border: 1px solid #999;
+}
+
+#amount:focus {
+  padding: 0 14px;
+  border: 2px solid #675afe;
+}
+
+form .drop-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.drop-list .select-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  width: 115px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+
+.select-box select {
+  width: auto;
+  font-size: 16px;
+  margin: 0 -5px 0 5px;
+}
+
+.select-box select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.select-box select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #fff;
+}
+
+.drop-list .select-box img{
+  max-width: 25px;
+}
+
+.drop-list .icon {
+  font-size: 22px;
+  cursor: pointer;
+  transform: translateY(40%);
+}
+
+form .exchange-rate {
+  font-size: 16px;
+  margin: 20px 0 30px;
+}
+
+form button {
+  padding: 20px 10px;
+  background: #675afe;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: linear-gradient(to bottom, #675afe, #1604d8);
+}
